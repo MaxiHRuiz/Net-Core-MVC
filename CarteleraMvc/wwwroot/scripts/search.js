@@ -1,6 +1,6 @@
 ﻿function keyWordsearch(elem) {
 
-    //place the API KEY inside the brackets AIzaSyBwkd0wKE3VbP66skDCpAuQvd71QI7Vj2o
+    //API KEY 
     gapi.client.setApiKey('AIzaSyBwkd0wKE3VbP66skDCpAuQvd71QI7Vj2o');
     gapi.client.load('youtube', 'v3', function () {
         makeRequest(elem);
