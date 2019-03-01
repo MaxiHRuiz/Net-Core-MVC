@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  carteleramvc:
+    image: carteleramvc
+    build:
+      context: .
+      dockerfile: CarteleraMvc\Dockerfile

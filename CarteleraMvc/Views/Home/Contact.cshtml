@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Contact";
+}
+<h2>@ViewData["Title"]</h2>
+<h3>@ViewData["Message"]</h3>
+
+<address>
+    @ViewData["Name"]<br />
+    @ViewData["Address"]<br />
+    <abbr title="Area code +54 9">Mobile phone: @ViewData["MobilePhone"]</abbr>
+</address>
+    <address>
+        <strong>Support:</strong> <a href="mailto:@ViewData["Mail"]">@ViewData["Mail"]</a><br />
+    </address>

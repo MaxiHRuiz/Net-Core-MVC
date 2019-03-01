@@ -1,0 +1,15 @@
+networks:
+  default:
+    external:
+      name: nat
+services:
+  carteleramvc:
+    build:
+      context: C:\Users\xCrixus\Downloads\NetCoreApp\CarteleraMvc
+      dockerfile: CarteleraMvc\Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: carteleramvc
+    ports:
+    - 80/tcp
+version: '3.0'

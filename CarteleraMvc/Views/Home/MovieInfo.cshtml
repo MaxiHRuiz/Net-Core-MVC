@@ -1,0 +1,26 @@
+﻿@model MovieDetails
+@{
+    <h1> @Html.DisplayFor(model => model.Title) (@Html.DisplayFor(model => model.Year))</h1>
+
+    <div class="post-container">
+        <div class="post-thumb">
+            <img class="image-movie" src=@Html.DisplayFor(model => model.Poster)>
+        </div>
+        <div class="post-content">
+            <h3 class="post-title"> Details:</h3>
+            <p><b>Directo:</b> @Html.DisplayFor(model => model.Director)</p>
+            <p><b>Actores:</b> @Html.DisplayFor(model => model.Actors)</p>
+            <p><b>Release Date:</b> @Html.DisplayFor(model => model.Released)</p>
+            <p><b>Runtime:</b> @Html.DisplayFor(model => model.Runtime)</p>
+            <p><b>Genre:</b> @Html.DisplayFor(model => model.Genre)</p>
+            <p><b>imdbRating:</b> @Html.DisplayFor(model => model.imdbRating)</p>
+            <p><b>Website:</b> <a style="color: darkred" href="@Html.DisplayFor(model => model.Website)"> Click to visit the web page.</a></p>
+            <p><b>Plot:</b> @Html.DisplayFor(model => model.Plot)</p>
+        </div>
+    </div>
+    <br />
+    <div class="container">
+        <input class="btn btn-danger" type="button" value="Return" onclick="@("window.location.href='" + @Url.Action("Index") + "'");" />
+    </div>
+
+}

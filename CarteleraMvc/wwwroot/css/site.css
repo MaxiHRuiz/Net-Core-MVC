@@ -1,0 +1,111 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+for details on configuring this project to bundle and minify static web assets. */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+/*Clases personales*/
+footer-bottom {
+    text-align: center;
+    background-color: #222;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.movie-card {
+    display: inline-block;
+    width: 350px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.image-movie {
+    width: 300px;
+    height: 450px;
+    border-radius: 8px;
+}
+
+.hr-test {
+    background-color: black;
+    height: 1px;
+    border: 0;
+}
+
+p, h1, h2, h3, h5, small, address {
+    color: whitesmoke;
+}
+
+.post-container {
+    margin: 20px 20px 0 0;
+    border: 2px solid whitesmoke;
+    overflow: auto;
+    background-color: dimgrey;
+}
+
+.post-thumb {
+    float: left
+}
+    .post-thumb img {
+        display: block
+    }
+
+.post-content {
+    margin-left: 325px
+}
+
+.post-title {
+    font-weight: bold;
+    font-size: 200%
+}
+
+
+
+.round-pic2 {
+    display: block;
+    width: 300px;
+    height: 450px;
+    border-radius: 8px;
+    margin: 0em auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+    .round-pic2:hover {
+        opacity: 0.8;
+        background-color: darkred;
+    }
