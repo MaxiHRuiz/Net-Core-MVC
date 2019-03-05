@@ -1,18 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using CarteleraMvc.Models;
 using System.Text;
 using System.Net;
 using System.IO;
 using Newtonsoft.Json;
-using Vse.Web.Serialization;
-using Google.Apis.YouTube.v3;
-using Google.Apis.Services;
-using Google.Apis.YouTube.v3.Data;
+using Microsoft.AspNetCore.Session;
+using Microsoft.AspNetCore.Http;
 
 namespace CarteleraMvc.Controllers
 {
@@ -49,6 +43,19 @@ namespace CarteleraMvc.Controllers
 
         public IActionResult Search(string nombre)
         {
+
+            //I use a session var "Search" to save the value of the search movie or serie.
+            if (string.IsNullOrEmpty(nombre))
+            {
+                nombre = HttpContext.Session.GetString("Search");
+            }
+            else
+            {
+                HttpContext.Session.SetString("Search", nombre);
+            }
+
+
+
             //token para utilizar la API
             string apiKey = "ede6e2a";
             string baseUri = $"http://www.omdbapi.com/?apikey={apiKey}";
@@ -85,7 +92,6 @@ namespace CarteleraMvc.Controllers
         {
             string apiKey = "ede6e2a";
             string Uri = $"http://www.omdbapi.com/?apikey={apiKey}&i={imdbID}&plot=full";
-
 
             HttpWebRequest getRequest = (HttpWebRequest)WebRequest.Create(Uri);
             getRequest.Method = "GET";

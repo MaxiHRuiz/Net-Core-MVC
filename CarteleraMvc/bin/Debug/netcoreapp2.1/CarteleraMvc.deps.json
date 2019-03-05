@@ -27,10 +27,10 @@
           "Google.Apis.YouTube.v3": "1.38.0.1488",
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.AspNetCore.Razor.Design": "2.1.2",
+          "Microsoft.AspNetCore.Session": "2.1.1",
           "Microsoft.NETCore.App": "2.1.0",
           "Velyo.Web.Exensions": "1.1.0",
-          "Vse.Web.Serialization.ControlledSerializationJsonConverter": "1.0.4",
-          "CloudrailSI": "1.0.0.0"
+          "Vse.Web.Serialization.ControlledSerializationJsonConverter": "1.0.4"
         },
         "runtime": {
           "CarteleraMvc.dll": {}
@@ -285,17 +285,6 @@
         },
         "compile": {
           "lib/net45/Vse.Web.Serialization.dll": {}
-        }
-      },
-      "CloudrailSI/1.0.0.0": {
-        "runtime": {
-          "CloudrailSI.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        },
-        "compile": {
-          "CloudrailSI.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -3343,11 +3332,6 @@
       "sha512": "sha512-MFqfXAWFmfovojAJI+I9obtBy8ZU9KbAZ/bhpteihdsekJP0fKiSHbtv7rZZ8dnOnqejkCnD9zRvZg7EIBFoyw==",
       "path": "vse.web.serialization.controlledserializationjsonconverter/1.0.4",
       "hashPath": "vse.web.serialization.controlledserializationjsonconverter.1.0.4.nupkg.sha512"
-    },
-    "CloudrailSI/1.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
     },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "type": "package",

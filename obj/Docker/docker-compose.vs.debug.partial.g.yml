@@ -8,8 +8,8 @@ services:
       - NUGET_PACKAGES=C:\.nuget\packages
       #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_carteleramvc$
     volumes:
-      - C:\Users\xCrixus\Downloads\NetCoreApp\CarteleraMvc\CarteleraMvc:C:\app
-      - C:\Users\xCrixus\onecoremsvsmon:C:\remote_debugger:ro
+      - C:\Users\xCrixus\source\repos\NetCore + MVC app\CarteleraMvc\CarteleraMvc:C:\app
+      - C:\Users\xCrixus\onecoremsvsmon\15.0.27130.2024:C:\remote_debugger:ro
 #$nuget_volume_mapping_carteleramvc$
     entrypoint: C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646
     labels:

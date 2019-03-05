@@ -20,7 +20,9 @@
     </div>
     <br />
     <div class="container">
-        <input class="btn btn-danger" type="button" value="Return" onclick="@("window.location.href='" + @Url.Action("Index") + "'");" />
+        <input class="btn btn-danger" type="button" value="Return" onclick="location.href='@Url.Action("Search", "Home")'" />
     </div>
 
 }
+
+

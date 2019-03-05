@@ -12,6 +12,5 @@
 
         public string Poster { get; set; }
 
-
     }
 }
