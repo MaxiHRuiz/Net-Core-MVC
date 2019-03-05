@@ -3,7 +3,7 @@ version: '3'
 services:
   carteleramvc:
     volumes:
-      - C:\Users\xCrixus\onecoremsvsmon:C:\remote_debugger:ro
+      - C:\Users\xCrixus\onecoremsvsmon\15.0.27130.2024:C:\remote_debugger:ro
     entrypoint: C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646
     labels:
       com.microsoft.visualstudio.debuggee.program: "\"C:\\Program Files\\dotnet\\dotnet.exe\""

@@ -1,11 +1,9 @@
-﻿@{
+﻿﻿@{
     ViewData["Title"] = "Home Page";
 }
-
 <div style="text-align: center">
     <hr />
     @model IEnumerable<Movie>
-
     @{
 
         if (Model != null)
@@ -18,7 +16,7 @@
                     {
 
                         <a href="@Url.Action("MovieInfo", "Home", new { imdbID = item.imdbID })">
-                                <img class="round-pic2 thumbnail" src=@item.Poster title="CLICK TO VIEW DESCRIPTION" >
+                            <img class="round-pic2 thumbnail" src=@item.Poster title="CLICK TO VIEW DESCRIPTION">
                         </a>
                     }
                     else
@@ -27,12 +25,10 @@
                             <img class="image-movie" src="~/images/default.jpg" title="CLICK TO VIEW DESCRIPTION">
                         </a>
                     }
-
                     <h5 class="card-title"><b>Title:</b> <span id="title">@item.Title</span></h5>
                     <p class="card-text"><b>Type:</b><span id="type"> @item.Type </span></p>
                     <p class="card-text"><small><b>Year:</b><span id="year">@item.Year</span></small></p>
                     <input href="#myModal" data-toggle="modal" id="query" class="btn btn-danger" type="button" value="See Trailer" onclick="keyWordsearch(this)" data-title="@item.Title" data-year="@item.Year" />
-
                     <div id="result">
                         <div id="myModal" class="modal fade">
                             <div class="modal-dialog">
@@ -48,7 +44,6 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
 
             }
@@ -63,4 +58,3 @@
 
     }
 </div>
-

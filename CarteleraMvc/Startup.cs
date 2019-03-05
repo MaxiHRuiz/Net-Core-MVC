@@ -31,7 +31,9 @@ namespace CarteleraMvc
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-
+            //AddDistributedMemoryCache and AddSession are required to save data on memory and per session
+            services.AddDistributedMemoryCache();
+            services.AddSession();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
@@ -51,6 +53,8 @@ namespace CarteleraMvc
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
+            //This is required to tell ASP.NET Core to use a Memory Cache
+            app.UseSession();
 
             app.UseMvc(routes =>
             {

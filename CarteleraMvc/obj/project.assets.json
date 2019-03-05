@@ -4407,6 +4407,7 @@
       "type": "package",
       "path": "google.apis/1.38.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "google.apis.1.38.0.nupkg.sha512",
         "google.apis.nuspec",
@@ -4427,6 +4428,7 @@
       "type": "package",
       "path": "google.apis.auth/1.38.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "google.apis.auth.1.38.0.nupkg.sha512",
         "google.apis.auth.nuspec",
@@ -4449,6 +4451,7 @@
       "type": "package",
       "path": "google.apis.core/1.38.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "google.apis.core.1.38.0.nupkg.sha512",
         "google.apis.core.nuspec",
@@ -4468,6 +4471,7 @@
       "type": "package",
       "path": "google.apis.youtube.v3/1.38.0.1488",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "google.apis.youtube.v3.1.38.0.1488.nupkg.sha512",
         "google.apis.youtube.v3.nuspec",
@@ -11938,6 +11942,7 @@
       "type": "package",
       "path": "velyo.web.exensions/1.1.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "content/Extensions/HttpContextExtensions.cs",
         "content/Extensions/HttpRequestExtensions.cs",
@@ -11953,6 +11958,7 @@
       "type": "package",
       "path": "vse.web.serialization.controlledserializationjsonconverter/1.0.4",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "lib/net40/Vse.Web.Serialization.dll",
         "lib/net40/Vse.Web.Serialization.pdb",
@@ -11968,6 +11974,7 @@
       "Google.Apis.YouTube.v3 >= 1.38.0.1488",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
+      "Microsoft.AspNetCore.Session >= 2.1.1",
       "Microsoft.NETCore.App >= 2.1.0",
       "Velyo.Web.Exensions >= 1.1.0",
       "Vse.Web.Serialization.ControlledSerializationJsonConverter >= 1.0.4"
@@ -11983,11 +11990,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\xCrixus\\Downloads\\NetCoreApp\\CarteleraMvc\\CarteleraMvc\\CarteleraMvc.csproj",
+      "projectUniqueName": "C:\\Users\\xCrixus\\source\\repos\\NetCore + MVC app\\CarteleraMvc\\CarteleraMvc\\CarteleraMvc.csproj",
       "projectName": "CarteleraMvc",
-      "projectPath": "C:\\Users\\xCrixus\\Downloads\\NetCoreApp\\CarteleraMvc\\CarteleraMvc\\CarteleraMvc.csproj",
+      "projectPath": "C:\\Users\\xCrixus\\source\\repos\\NetCore + MVC app\\CarteleraMvc\\CarteleraMvc\\CarteleraMvc.csproj",
       "packagesPath": "C:\\Users\\xCrixus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\xCrixus\\Downloads\\NetCoreApp\\CarteleraMvc\\CarteleraMvc\\obj\\",
+      "outputPath": "C:\\Users\\xCrixus\\source\\repos\\NetCore + MVC app\\CarteleraMvc\\CarteleraMvc\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12031,6 +12038,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.2, )"
+          },
+          "Microsoft.AspNetCore.Session": {
+            "target": "Package",
+            "version": "[2.1.1, )"
           },
           "Microsoft.NETCore.App": {
             "target": "Package",
